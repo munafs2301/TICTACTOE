@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F6FF9E"
+    tools:context="com.example.android.tic_tac_toe.ScoreBoard">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center_horizontal"
+        android:padding="15dp"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:textColor="#1D2BA2"
+        android:text="SCOREBOARD"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:padding="4dp"
+        android:textColor="#000000"
+        android:textSize="56sp"
+        android:fontFamily="sans-serif-light"
+        android:layout_height="wrap_content"
+        android:text="X" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:padding="4dp"
+        android:fontFamily="sans-serif-light"
+        />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="5dp"
+        android:backgroundTint="#1D2BA2"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="4dp"
+        android:textColor="#000000"
+        android:textSize="56sp"
+        android:fontFamily="sans-serif-light"
+        android:text="O"
+        />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:padding="4dp"
+        android:fontFamily="sans-serif-light"/>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+        android:text="RESET"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:background="#1D2BA2"
+        android:onClick="resetGameScore"
+        android:gravity="bottom"
+        android:layout_marginBottom="32dp"/>
+
+
+
+</RelativeLayout>
